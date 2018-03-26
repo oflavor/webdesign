@@ -5,9 +5,18 @@ p {
     border: black;
     font-size: 17px;
 }
+h1 {
+    color: red;
+    font-size: 30px;
+    font-style: oblique;
+}
 h2 {
     color: white;
     font-size: 20px;
+}
+h3 {
+    color: red;
+    font-size: 25px;
 }
 aside {
     background-image: url('Images/fireasid.jpg');
@@ -62,12 +71,21 @@ nav a {
 a:hover {
     color: #F71818;
 }
+a:link {
+    color: white;
+}
+a:visited {
+    /*dont want a visited*/
+}
 a {
     color: #F71818;
 }
 body {
     background-image: url('Images/background.jpg');
     padding: 15px;
+    margin: auto;
+    font-size: 12px;
+    font-family: Arial, Helvetica, Verdana;
 }
 
 li {
@@ -76,7 +94,7 @@ li {
 .button {                            
     width: 130px;
 }
-footer {
+header, footer {
     color:white;
 position: fixed;
   right: 0;
@@ -84,10 +102,4 @@ position: fixed;
   left: 0;
   padding: 1rem;
   text-align: center;
-}
-body {
-    margin: auto;
-    padding: 10px;
-    font-size: 12px;
-    font-family: Arial, Helvetica, Verdana;
 }
