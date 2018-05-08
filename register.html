@@ -1,0 +1,143 @@
+<!--https://oflavor.github.io/webdesign/index.html-->
+<!doctype html>
+<html lang="en">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="style.css" />
+<head>
+	<title>Register</title>
+</head>
+<script>
+function Submit(){
+var emailRegex = /^[A-Za-z0-9._]*\@[A-Za-z]*\.[A-Za-z]{2,5}$/;
+var fname = document.form.Name.value,
+femail = document.form.Email.value,
+fpassword = document.form.Password.value;
+if( fname == "" )
+{
+alert("Please enter the First name.");
+document.form.Name.focus();
+return false;
+}
+
+if (femail == "" )
+{
+document.form.Email.focus();
+alert("Please enter email id");
+return false;
+
+}else if(!emailRegex.test(femail)){
+
+document.form.Email.focus();
+alert("Please enter valid email id");
+return false;
+}
+  
+if(fpassword == "")
+{
+document.form.Password.focus();
+alert("Please enter password");
+return false;
+}
+
+if(document.form.radiobutton[0].checked == false && document.form.radiobutton[1].checked == false){
+alert("Please select gender");
+return false;
+}
+if(fname != '' && femail != '' && fpassword != ''){
+alert("Form submitted successfully");
+return true;
+}
+  
+}
+</script>
+<body>
+	<nav>
+		<a class="button" href="index.html">Home</a>
+        <a class="button" href="aftercare.html">Aftercare</a>
+        <a class="button" href="gallery.html">Gallery</a>
+        <a class="button" href="register.html">Register</a>
+        <a class="button" href="contact.html">Contact Us</a>
+    </nav>
+    <div id="wrapper">
+	  <aside>
+	        <h2>Office Hours</h2>
+	        <table>
+   <tr>
+      <td>Mon-Fri: </td>
+      <td>9:00-5:00</td>
+   </tr>
+   <tr>
+      <td>Saturday: </td>
+      <td>12:00-4:00</td>
+   </tr>
+   <tr>
+      <td>Sunday: </td>
+      <td>Closed</td>
+   </tr>
+</table>
+		<br>
+		<h4>One time offer!</h4>
+		<img src="Images/silverblack.jpg" alt="silverback Ink" width="130px" height="130px">
+		<a href="https://silverbackink.com/?target=main">Silverback Ink</a>
+		<br>
+		<h4>Amazing Deals!</h4>
+	    </aside>
+	    <div id="header">
+	      <h1>Register</h1>
+	      <br>
+	    </div>
+<main>
+<center>
+<form name="form" method="post" action="#">
+<table>
+<tr>
+<td align="center">
+Name:
+</td>
+<td align="center">
+<input type="text" name="Name" value="" placeholder="Full Name" >
+</td>
+</tr>
+<tr>
+<td align="center">
+E-Mail Address:
+</td>
+<td align="center">
+<input type="text" name="Email" value="" placeholder="Your Email">
+</td>
+</tr>
+<tr>
+<td align="center">
+Password:
+</td>
+<td align="center">
+<input type="password" name="Password" value="" placeholder="New Password">
+</td>
+</tr>
+<tr>
+<td align="center">
+<input type="radio" name="radiobutton" value="Female">
+<label >Female</label>
+</td>
+<td align="center">
+<input type="radio" name="radiobutton" value="Male">
+<label >Male</label>
+</td>
+</tr>
+<tr>
+<td colspan="2" align="center">
+<input type="submit" value="Sign Up Now" onClick="return Submit()">
+</td>
+</tr>
+</table>
+</form>
+</center>
+</main>
+    </div>
+        <footer>
+	        <small>&copy; 2018 Aaron Lorenz's Web Design website</small>
+	        <br />
+	        <a href="mailto:oFLavoR@icloud.com">Contact Us</a>
+	    </footer>
+</body>
+</html>

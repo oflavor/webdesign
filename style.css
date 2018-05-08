@@ -1,0 +1,183 @@
+ul, p, label {
+    color: white;
+    font-style: oblique;
+    font-weight: 900;
+    border: black;
+    font-size: 17px;
+}
+ol {
+    color: white;
+    font-style: oblique;
+    font-weight: 900;
+    border: black;
+    font-size: 14px;
+}
+td {
+    color: white;
+    font-style: oblique;
+    font-weight: 900;
+    border: black;
+    font-size: 15px;
+}
+h1{
+    color: red;
+    font-size: 30px;
+    font-style: oblique;
+}
+h2 {
+    color: white;
+    font-size: 20px;
+}
+h3 {
+    color: red;
+    font-size: 25px;
+}
+h4 {
+    color: yellow;
+    font-size: 18px;
+    font-style: italic;
+}
+aside {
+    background-image: url('Images/fireasid.jpg');
+    float: right;
+    width: 150px;
+    text-align: center;
+    height: 480px;
+    border-left: groove;
+    border-color: black;
+    border-left-width: 5px;
+}
+main {
+    position: center;
+    margin: 0, 0, 0, 160px;
+    height: 575px;
+    padding-left: 40px;
+    padding-right: 190px;
+}
+nav {
+    overflow: hidden;
+    background-image: url('Images/lioneyes.jpg');
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 60px;
+    text-decoration: none;
+}
+#header {
+    text-align: center;
+}
+#wrapper {
+    margin-top: 30px;
+    background-image: url('Images/lion.jpg');
+    background-size: contain;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 500px;
+    max-width: 1000px;
+    height: 480px;
+    padding: 5px;
+    border: groove;
+    border-color: white;
+}
+a:hover {
+    color: #F71818;
+}
+a:link {
+    color: white;
+}
+a:visited {
+    /*dont want a visited*/
+}
+a {
+    color: #F71818;
+}
+body {
+    background-image: url('Images/background.jpg');
+    padding: 15px;
+    margin: auto;
+    font-size: 12px;
+    font-family: Arial, Helvetica, Verdana;
+}
+
+li {
+    margin: 10px 0;
+}
+.button {                            
+    width: 80px;
+}
+header, footer {
+    color:white;
+position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
+}
+@media only screen and (min-width: 401px) and (max-width: 600px) {
+    aside{
+        display: none;
+        width: 1px;
+    }
+    img{
+        width: 80px;
+        height: 80px;
+    }
+    ul, p{
+          color: white;
+    font-style: oblique;
+    font-weight: 800;
+    border: black;
+    font-size: 11px;  
+    }
+        ol {
+    color: white;
+    font-style: oblique;
+    font-weight: 900;
+    border: black;
+    font-size: 7px;
+}
+    .button {                            
+    width: 5px;
+    height: 10px;
+}
+
+  }
+  @media only screen and (max-width: 400px) {
+    aside{
+        display: none;
+        width: 1px;
+    }
+    img{
+        width: 80px;
+        height: 80px;
+    }
+   ul, p{
+          color: white;
+    font-style: oblique;
+    font-weight: 800;
+    border: black;
+    font-size: 11px;  
+    }
+    ol {
+    color: white;
+    font-style: oblique;
+    font-weight: 900;
+    border: black;
+    font-size: 7px;
+}
+    .button {      display: none;
+}
+nav {
+    display: none;
+}
+
+  }
